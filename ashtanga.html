@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b48f6c",
+                        "background-light": "#FDFBF7",
+                        "background-dark": "#1c1916",
+                        "custom-text": "#3e2f26",
+                        "deep-earth-brown": "#3e2f26",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }</script>
+    <title>Inmersión Ashtanga - Bautista Ragno</title>
+    <style>
+        .curved-divider {
+            border-radius: 0 0 50% 50% / 0 0 20px 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-custom-text">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Top Navigation Bar -->
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 bg-background-light/80 backdrop-blur-md sticky top-0 z-50">
+                <div class="flex items-center gap-4">
+                    <div class="size-10 overflow-hidden rounded-full">
+                        <img alt="Logo Inmersión Ashtanga" class="w-full h-full object-contain"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDflDcbTfq9Wd1XWyw7oFEk3Zq4fuXnFmUOY2lX5S4DZzvuRL7isHIKoUVgLaWYstXby1Watvw3zhjho4e7-Fsy9WQJDjTQSawVC-TUb6sIVF1sYekP03qLNvDS0WaTmdlj7kxZ4Czq7VIP4b8s2NKyvIJCe0uJwc4gJCSO1gH_HR6GDbYkM_GfIdaC7OOWShnIyYrped-ay32DddcLXEGCNRlSwONTFZD2HYeODHfDdk43TPvXn0K_k-eqY_PWSkNHxMACIjfIyJIL" />
+                    </div>
+                    <h2 class="text-custom-text text-xl font-bold leading-tight tracking-tight">Inmersión
+                        Ashtanga</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8 items-center">
+                    <nav class="hidden md:flex items-center gap-8"><a
+                            class="text-custom-text/70 hover:text-primary text-sm font-medium transition-colors"
+                            href="index.html">Inicio</a><a class="text-primary text-sm font-bold border-b-2 border-primary"
+                            href="ashtanga.html">Ashtanga</a><a
+                            class="text-custom-text/70 hover:text-primary text-sm font-medium transition-colors"
+                            href="vinyasa.html">Vinyasa</a><a
+                            class="text-custom-text/70 hover:text-primary text-sm font-medium transition-colors"
+                            href="formaciones.html">Formaciones</a></nav>
+                    <button
+                        class="bg-primary text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-primary/90 transition-all">
+                        Contacto
+                    </button>
+                </div>
+            </header>
+            <main class="flex-1">
+                <div class="max-w-7xl mx-auto px-6 md:px-10 py-12 md:py-20 w-full">
+                    <!-- Hero Section -->
+                    <section class="relative bg-primary/5 pt-12 pb-24 curved-divider">
+                        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-6">
+                                <span
+                                    class="inline-block px-4 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-widest">Tradición
+                                    Mysore</span>
+                                <h1 class="text-5xl md:text-6xl font-black leading-tight text-custom-text">
+                                    Explora la <br /><span class="text-primary">Tradición Mysore</span>
+                                </h1>
+                                <p class="text-lg max-w-lg leading-relaxed text-custom-text/80">
+                                    Una práctica personal en un espacio compartido, siguiendo el linaje tradicional del
+                                    Ashtanga Yoga.
+                                </p>
+                                <div class="flex items-center gap-4 pt-4"><button
+                                        class="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">Ver
+                                        horarios</button></div>
+                            </div>
+                            <div class="relative">
+                                <div class="aspect-square rounded-[3rem] overflow-hidden rotate-3 shadow-2xl">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Person practicing yoga in a serene studio"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNKHO-iTHSZjOgiCd-fa2ZyDdIdv99I8OGoCKsFwBS3Z8CKhEOU3oZ1YI79-TfkDCrhdJUHIlAgzqkRVuIuuH2VZYqD6SDmZFBFqs8-V3TBrlgm9bUC6tnF1Yl2fwEiMaSR1DtfaXSffdYpCq0-v_HWz44GFsxlK1QnErimtZVcYyDm6UtNUYIr2qiKhu8QWMq2xoTC1ciZDHUdUXtMfe1xT4nkYW9Yf22uOsRI6r3qUw1C6G7n7Z292YThtKj79omzBFsFAFjvd14" />
+                                </div>
+                                <div
+                                    class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 -rotate-3 border border-primary/10">
+                                    <div class="bg-primary/20 p-3 rounded-full">
+                                        <span class="material-symbols-outlined text-primary">history_edu</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-bold uppercase text-custom-text/60">Linaje</p>
+                                        <p class="font-bold">Tradición Mysore</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!-- Stats Section -->
+                    <div class="max-w-6xl mx-auto px-6 md:px-10 mt-8 grid md:grid-cols-3 gap-8">
+                        <div
+                            class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 hover:border-primary/20 transition-all">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-4">trending_up</span>
+                            <h4 class="text-xl font-bold mb-3">Todos los Niveles</h4>
+                            <p class="text-custom-text/70 leading-relaxed">Desde principiantes a avanzados, adaptamos la
+                                práctica a cada cuerpo.</p>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 hover:border-primary/20 transition-all">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-4">bolt</span>
+                            <h4 class="text-xl font-bold mb-3">Intensidad Media-Alta</h4>
+                            <p class="text-custom-text/70 leading-relaxed">Un desafío físico y mental que busca la
+                                purificación a través del calor interno.</p>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 hover:border-primary/20 transition-all">
+                            <span class="material-symbols-outlined text-4xl text-primary mb-4">schedule</span>
+                            <h4 class="text-xl font-bold mb-3">Mysore Style</h4>
+                            <p class="text-custom-text/70 leading-relaxed">Práctica personal en un espacio compartido,
+                                permitiendo un progreso individualizado.</p>
+                        </div>
+                    </div>
+                    <!-- Profile Section -->
+                    <div class="max-w-6xl mx-auto px-6 md:px-10 mt-16 grid md:grid-cols-12 gap-12 items-center">
+                        <div class="md:col-span-5 relative">
+                            <div
+                                class="aspect-square rounded-2xl overflow-hidden shadow-2xl rotate-3 bg-primary/10 p-2">
+                                <img alt="Young man performing meditation"
+                                    class="w-full h-full object-cover rounded-xl -rotate-3"
+                                    data-alt="Young man in a zen meditation pose"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAosrGt9puUGXLhKoca0OkZEV-meddIiqiKbXWAe4lI5lD83XJwS9bKfKNJqGTL2u1sFRIl5BRVxaC775EzO9lEzkkEEJ1UOC2EH3f43JLJqUAv7uE3TR3TFd2eeVzOAxhTVnyQN9ZcgZgx9ainDjBTR1tEA8gJepDxSi30Vz1L1pnJlsqjX3mGegAYIjKTdLBXnUuC26wG_R9RtNX-pnX8qdZ8NeERzaBJgndJGmIFIPpYGMnHFlfJXHGrudnoX8lyQrx217yFJmr0" />
+                            </div>
+                            <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block">
+                                <p class="text-primary font-bold text-2xl">15+ Años</p>
+                                <p class="text-custom-text/60 text-sm">De experiencia</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-7 space-y-6">
+                            <div>
+                                <h3 class="text-primary font-bold text-lg mb-2">Conoce a tu Maestro</h3>
+                                <h2 class="text-4xl font-black text-custom-text leading-tight">Bautista Ragno</h2>
+                                <p class="text-primary/80 font-medium text-xl mt-2">Maestro de Ashtanga Yoga • Tradición
+                                    y Linaje</p>
+                            </div>
+                            <p class="text-custom-text/80 text-lg leading-relaxed italic">
+                                "El Ashtanga Yoga no es solo una práctica física; es un camino hacia la claridad interna
+                                y el equilibrio espiritual."
+                            </p>
+                            <p class="text-custom-text/80 text-lg leading-relaxed">
+                                El Ashtanga Yoga se basa en el sistema de los 8 pasos (Ashtanga). A través de la
+                                práctica constante, desarrollamos fuerza física, claridad mental y una conexión profunda
+                                con la tradición heredada de nuestros maestros.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">verified</span>
+                                    <span class="font-bold">Fuerza Física</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">psychology</span>
+                                    <span class="font-bold">Claridad Mental</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">history_edu</span>
+                                    <span class="font-bold">Tradición Pura</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">self_improvement</span>
+                                    <span class="font-bold">8 Limbs (Pasos)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Features/Philosophy -->
+                </div>
+            </main>
+            <!-- Footer Section -->
+            <section class="px-6 pb-24 mt-24">
+                <div class="max-w-7xl mx-auto rounded-[2.5rem] p-12 md:p-20 text-center relative overflow-hidden"
+                    style="background-color: #3e2f26;">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full -mr-32 -mt-32"></div>
+                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-primary/10 rounded-full -ml-24 -mb-24"></div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 relative z-10">¿Listo para transformar tu
+                        práctica?</h2>
+                    <p class="text-white/70 text-lg mb-12 max-w-2xl mx-auto relative z-10">Únete a nuestras sesiones de
+                        Mysore Style y descubre la profundidad del Ashtanga Yoga.</p>
+                    <button
+                        class="bg-primary text-background-light px-10 py-5 font-black text-lg hover:scale-105 transition-transform relative z-10 rounded-full">Reservar
+                        clase de Mysore</button>
+                </div>
+            </section>
+            <footer class="bg-custom-text text-white/90 py-16 px-6 md:px-20 mt-20">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="size-8 overflow-hidden rounded-full">
+                                <img alt="Logo Footer" class="w-full h-full object-cover"
+                                    data-alt="Small version of the brand logo"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLO0LwZ0oUu4GPdxxwIm_eqqiU-tfCSPKtIy8XS6dW1_PRxFVrH6z_3WCs6Z_YuVFOzGnMFqTMk-hG5lwfDEi-dQCJ1G1gODhCbm2gqUJveIlmQyirRGs37QITyAHc4W0iiFkf4oKOFHEeCv5NFuvkOC7TcVTC81smxbbjWBtT9Nm6vhZE70dhoUc7FU526pO-5KpqSmUhuU_LeSFoGD5jtAv1XuXHs_2VROA_ID91peHKw0AePz7cF1pPCKc9f4ZJqlE2HJFuO-5Q" />
+                            </div>
+                            <h2 class="text-xl font-bold text-white">Inmersión Ashtanga</h2>
+                        </div>
+                        <p class="text-white/60 text-sm leading-relaxed mb-6">
+                            Inspirando movimiento y consciencia a través de la práctica tradicional del Ashtanga Yoga en
+                            su forma más pura.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="hover:text-primary transition-colors" href="#"><span
+                                    class="material-symbols-outlined">public</span></a>
+                            <a class="hover:text-primary transition-colors" href="#"><span
+                                    class="material-symbols-outlined">alternate_email</span></a>
+                            <a class="hover:text-primary transition-colors" href="#"><span
+                                    class="material-symbols-outlined">share</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Explorar</h4>
+                        <ul class="space-y-4 text-sm text-white/60">
+                            <li><a class="hover:text-primary transition-colors" href="#">Práctica Mysore</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Talleres Especiales</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Formación Docente</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Retiros</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Recursos</h4>
+                        <ul class="space-y-4 text-sm text-white/60">
+                            <li><a class="hover:text-primary transition-colors" href="#">Blog de Ashtanga</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Galería</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Preguntas Frecuentes</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="#">Sutras de Patanjali</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Newsletter</h4>
+                        <p class="text-sm text-white/60 mb-4">Suscríbete para recibir novedades sobre formaciones y
+                            retiros.</p>
+                        <form class="flex flex-col gap-3">
+                            <input
+                                class="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-primary"
+                                placeholder="Tu email" type="email" />
+                            <button
+                                class="bg-primary text-white font-bold py-2 rounded-lg text-sm hover:bg-primary/90 transition-all">Unirme</button>
+                        </form>
+                    </div>
+                </div>
+                <div
+                    class="max-w-6xl mx-auto pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-xs text-white/40">© 2024 Inmersión Ashtanga. Todos los derechos reservados.</p>
+                    <div class="flex gap-8 text-xs text-white/40">
+                        <p>Barcelona, España</p>
+                        <p>hola@fluidezvinyasa.com</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="player.js"></script>
+</body>
+
+</html>

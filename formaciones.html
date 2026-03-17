@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b48f6c",
+                        "background-light": "#FDFBF7",
+                        "background-dark": "#1c1916",
+                        "brand-text": "#3e2f26",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            background-color: #FDFBF7;
+            color: #3e2f26;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light text-brand-text font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Top Navigation Bar -->
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 bg-background-light sticky top-0 z-50 backdrop-blur-md bg-background-light/90">
+                <div class="flex items-center gap-4">
+                    <div class="size-10 flex items-center justify-center">
+                        <img alt="Brand Logo" class="h-full w-auto object-contain rounded-full"
+                            data-alt="Official yoga studio brand logo design"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjeYoJTjJGQxN1_VCH_XK0ffIQiB9_rj97r1Eoj-k5BL7eNZigi5yPsGVNHDrWvY9GSf_GHJECZ1Q-LvJ1yQiAzZjQugsyUG2ekUtQGb1HuxygxO3IVwydEZ2EyVi6E3FtnLB0z4uoIQ9tocibvA7lczfYiG0Obq0fJ_4pod2LNgfrU69Uz6Wt2hUc9Xect8lRSuZMA6cjJzNntId4mnHrHbriyarJN4FriPvxhZO8loYXSrXbKwzSogXLPt2yQWn1l1BTzFBaS_qH" />
+                    </div>
+                    <h2 class="text-brand-text text-lg font-bold leading-tight tracking-tight">Prana Yoga</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8 items-center">
+                    <nav class="hidden md:flex items-center gap-9">
+                        <a class="text-brand-text/80 hover:text-primary text-sm font-medium transition-colors"
+                            href="index.html">Inicio</a>
+                        <a class="text-brand-text/80 hover:text-primary text-sm font-medium transition-colors"
+                            href="ashtanga.html">Ashtanga</a>
+                        <a class="text-brand-text/80 hover:text-primary text-sm font-medium transition-colors"
+                            href="vinyasa.html">Vinyasa</a>
+                        <a class="text-primary text-sm font-bold border-b-2 border-primary pb-1"
+                            href="formaciones.html">Formaciones</a>
+                    </nav>
+                    <button
+                        class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold transition-transform hover:scale-105 active:scale-95">
+                        Contactar
+                    </button>
+                </div>
+            </header>
+            <main class="flex-1">
+                <!-- Hero Section -->
+                <div class="px-4 md:px-20 py-8">
+                    <div class="relative w-full @container">
+                        <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[400px] relative"
+                            data-alt="Peaceful yoga teacher training session in a sunlit studio"
+                            style='background-image: linear-gradient(180deg, rgba(62, 47, 38, 0) 0%, rgba(62, 47, 38, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3tXImMd8ZVnduqRtq9DD373cUPxmkuL5R2MrhzrJ5Eeo1Rv_Vh9aqb98rxs73O5kGPXY4KH-JkiaM7-I5CwNBSJT9JHtJrls-HixnV4Upz-QbWKHhe7EuOn3Y1Q_-n4k37N9KLaOQsH4osOP3a2JbNkakv5nuUFot5nIFNavTZxvBSqqkHpjSciIPpuuZmJjYcCRAzddZsWKXhlUJ9Qkhvcdjrcr3h8L0-htvB64JPPO9KtcFoSraca4NVIyrWwk_SZqUVirf8aFs");'>
+                            <div class="p-8 md:p-12">
+                                <span
+                                    class="bg-primary/90 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block">Certificación
+                                    Internacional</span>
+                                <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight max-w-2xl">Formación
+                                    de Profesores de Yoga</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification & Intro -->
+                <div class="px-4 md:px-20 py-12 max-w-5xl mx-auto text-center">
+                    <div class="flex justify-center mb-6">
+                        <span class="material-symbols-outlined text-primary text-5xl">verified_user</span>
+                    </div>
+                    <h2 class="text-brand-text text-3xl md:text-4xl font-bold mb-6">Estructura Institucional y
+                        Certificación</h2>
+                    <p class="text-brand-text/70 text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
+                        Nuestra formación cuenta con el aval de <span class="font-bold text-brand-text">Yoga
+                            Alliance</span>, garantizando un estándar internacional de excelencia y rigor académico. Al
+                        finalizar, estarás capacitado para enseñar en cualquier parte del mundo.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4"><button
+                            class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:-translate-y-1 active:scale-95">Solicitar
+                            Programa Completo</button><button
+                            class="bg-white border-2 border-primary/20 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-all hover:-translate-y-1 active:scale-95">Ver
+                            Calendario</button></div>
+                </div>
+                <!-- Curriculum Blocks -->
+                <div class="py-20 px-4 md:px-20">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="flex items-center gap-3 mb-12">
+                            <div class="w-10 h-[2px] bg-primary"></div>
+                            <h2 class="text-brand-text text-2xl font-bold tracking-tight">Bloques Curriculares</h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Card 1 -->
+                            <div
+                                class="bg-background-light p-8 rounded-2xl shadow-sm border border-primary/10 hover:shadow-md transition-shadow hover:-translate-y-2 duration-300">
+                                <span
+                                    class="material-symbols-outlined text-primary mb-4 text-3xl">self_improvement</span>
+                                <h3 class="text-xl font-bold mb-3">Técnicas y Práctica</h3>
+                                <p class="text-brand-text/70 text-sm leading-relaxed">Estudio profundo de asanas,
+                                    pranayama y técnicas de meditación. Alineación y ajustes seguros.</p>
+                            </div>
+                            <!-- Card 2 -->
+                            <div
+                                class="bg-background-light p-8 rounded-2xl shadow-sm border border-primary/10 hover:shadow-md transition-shadow hover:-translate-y-2 duration-300">
+                                <span class="material-symbols-outlined text-primary mb-4 text-3xl">menu_book</span>
+                                <h3 class="text-xl font-bold mb-3">Anatomía y Fisiología</h3>
+                                <p class="text-brand-text/70 text-sm leading-relaxed">Comprensión biomecánica aplicada
+                                    al yoga y prevención de lesiones en la práctica docente.</p>
+                            </div>
+                            <!-- Card 3 -->
+                            <div
+                                class="bg-background-light p-8 rounded-2xl shadow-sm border border-primary/10 hover:shadow-md transition-shadow hover:-translate-y-2 duration-300">
+                                <span class="material-symbols-outlined text-primary mb-4 text-3xl">history_edu</span>
+                                <h3 class="text-xl font-bold mb-3">Filosofía y Ética</h3>
+                                <p class="text-brand-text/70 text-sm leading-relaxed">Textos clásicos, historia del yoga
+                                    y el código de conducta ética para el profesor moderno.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Call to Action Section -->
+                <section class="py-24 px-4 text-center">
+                    <div
+                        class="max-w-3xl mx-auto bg-brand-text text-white p-12 rounded-[2rem] shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full -mr-16 -mt-16"></div>
+                        <div class="relative z-10">
+                            <h2 class="text-3xl font-bold mb-6">¿Listo para comenzar tu viaje?</h2>
+                            <p class="text-white/80 mb-10 text-lg">Las inscripciones para la próxima cohorte están
+                                abiertas. Cupos limitados para garantizar una enseñanza personalizada.</p>
+                            <button
+                                class="bg-primary text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 hover:bg-white hover:text-brand-text shadow-xl shadow-black/20 hover:-translate-y-1 active:scale-95">Solicitar
+                                Entrevista de Admisión</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-brand-text text-background-light pt-20 pb-10 px-6 md:px-20">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                    <div class="col-span-1 md:col-span-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <img alt="Logo" class="h-8 brightness-0 invert brightness-100 invert-0 rounded-full"
+                                data-alt="Monochrome white brand logo for dark background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl2aMq_QcY2AuJtPZ7w6TKPy2Jy6nOVoN2ycF_pZ66-Ikz_BjsHtlqua_Y0XplBx2vZC5qjWHisx7JRMx-l9lf47z2LCN-UOwUzJjHf69Gbjm0jtfPVZGnRr_b2GIUCqHsvlIWl4HBseds6VJ82YePlZeY-s7UOtaGbJ0u1ebQE9C4ctnrwlGrGx24SnLVtKAHZsTy1Upk-H0dEOdXti-etBp7bbLzet4Zm_mmdgemA9-369JSPUmNhr-JR-jvrMzpxpUIIDTXgtku" />
+                            <span class="text-xl font-bold">Prana Yoga</span>
+                        </div>
+                        <p class="text-background-light/60 text-sm leading-relaxed">
+                            Dedicados a la enseñanza auténtica del yoga, formando practicantes y profesores conscientes
+                            desde hace más de una década.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 text-primary">Navegación</h4>
+                        <ul class="space-y-4 text-sm text-background-light/70">
+                            <li><a class="hover:text-white transition-colors" href="#">Inicio</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Clases</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Talleres</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 text-primary">Formación</h4>
+                        <ul class="space-y-4 text-sm text-background-light/70">
+                            <li><a class="hover:text-white transition-colors" href="#">RYT 200 Horas</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">RYT 300 Horas</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Especializaciones</a></li>
+                            <li><a class="hover:text-white transition-colors" href="#">Becas</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 text-primary">Newsletter</h4>
+                        <p class="text-sm text-background-light/70 mb-4">Recibe actualizaciones sobre retiros y cursos.
+                        </p>
+                        <div class="flex gap-2">
+                            <input
+                                class="bg-white/10 border-white/20 rounded-lg px-4 py-2 text-sm w-full focus:ring-1 focus:ring-primary outline-none focus:border-primary transition-colors"
+                                placeholder="Email" type="email" />
+                            <button
+                                class="bg-primary p-2 rounded-lg hover:bg-primary/80 transition-colors active:scale-95">
+                                <span class="material-symbols-outlined text-white">send</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background-light/40">
+                    <p>© 2024 Prana Yoga Studio. Todos los derechos reservados.</p>
+                    <div class="flex gap-6">
+                        <a class="hover:text-white transition-colors" href="#">Privacidad</a>
+                        <a class="hover:text-white transition-colors" href="#">Términos</a>
+                        <a class="hover:text-white transition-colors" href="#">Cookies</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="player.js"></script>
+</body>
+
+</html>

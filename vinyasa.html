@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Noto+Sans:wght@100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b48f6c",
+                        "background-light": "#FDFBF7",
+                        "background-dark": "#1c1916",
+                        "custom-text": "#3e2f26",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }</script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #3e2f26;
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .curved-divider {
+            border-radius: 0 0 50% 50% / 0 0 20px 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light font-display">
+    <!-- Top Navigation Bar -->
+    <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 bg-background-light/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="flex items-center gap-4">
+            <div class="size-10 overflow-hidden rounded-full">
+                <img alt="Logo Inmersión Ashtanga" class="w-full h-full object-cover" data-alt="Brand logo"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBgdpKaeP3iPTu4ATiFLTJvUW8cD8u8MZ4VPSg1z-pLXy0xDxKcgq6RP6TG6tx0GnT5lNs6KdIxeFOHLeF_ggjUy2xbKmrbR9KVpgh71b-RHyoeulsNrmv_PmnADF13MsGBqtaMJubP7psoVtSjOuvohtnEUxKZLAtKAKuppviWgW3gY1CGpOW259hiXIgliL8Ipjxu0f9qIFa5Ta51hEV6GVZtuxvT9-A4TuE0calyDrXWEHlHD13eaR0GwdLLtZZtqv7fXY1HUQn" />
+            </div>
+            <h2 class="text-custom-text text-xl font-bold leading-tight tracking-tight">Inmersión Ashtanga</h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8 items-center">
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-custom-text/70 hover:text-primary text-sm font-medium transition-colors"
+                    href="index.html">Inicio</a>
+                <a class="text-custom-text/70 hover:text-primary text-sm font-medium transition-colors"
+                    href="ashtanga.html">Ashtanga</a>
+                <a class="text-primary text-sm font-bold border-b-2 border-primary" href="vinyasa.html">Vinyasa</a>
+                <a class="text-custom-text/70 hover:text-primary text-sm font-medium transition-colors"
+                    href="formaciones.html">Formaciones</a>
+            </nav>
+            <button
+                class="bg-primary text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-primary/90 transition-all">
+                Contacto
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section with Curved Divider -->
+        <section class="relative bg-primary/5 pt-12 pb-24 curved-divider -mx-6 md:-mx-10 -mt-12">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span
+                        class="inline-block px-4 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-widest">Experiencia
+                        Vinyasa</span>
+                    <h1 class="text-5xl md:text-6xl font-black leading-tight text-custom-text">
+                        El Arte del <br /><span class="text-primary">Movimiento Fluido</span>
+                    </h1>
+                    <p class="text-lg max-w-lg leading-relaxed text-custom-text/80">
+                        Encuentra el equilibrio a través de la respiración y secuencias creativas diseñadas para
+                        despertar tu energía vital con Andrea Gattuso.
+                    </p>
+                    <div class="flex items-center gap-4 pt-4"><button
+                            class="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">Comenzar
+                            ahora</button><button
+                            class="border-2 border-primary/30 text-primary px-8 py-4 rounded-full font-bold hover:bg-primary/5 transition-colors">Ver
+                            horarios</button></div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-[3rem] overflow-hidden rotate-3 shadow-2xl">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Andrea Gattuso performing a graceful vinyasa yoga pose"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjuzD6ZLZw8FcCOGDyDDDLHddabkjV2vUtr1z_o5U-r9FB7hDbVMWBbLPP1OPDUaaRZD6NFp6mopoHblDlpYAyV9m2xXa55f8AZLT7qSsEJCKeAvBr0JMY9-28xp1dW4tvb1wr77tok1rUgYRv4k7YMvq3LJ48wFp3HuS0qRu3YnS8_xbOjIfya4CpK5JiicWo9Q8MBiXLLpr8v_pxFxJH0I4BOygX-RzZAaWWp4YW02X3hmcc50aeBosWXs0lmFUS2N7F7f9EhnRb" />
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 -rotate-3 border border-primary/10">
+                        <div class="bg-primary/20 p-3 rounded-full">
+                            <span class="material-symbols-outlined text-primary">air</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold uppercase text-custom-text/60">Enfoque</p>
+                            <p class="font-bold">Breath-to-Movement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Section -->
+        <div class="max-w-6xl mx-auto px-6 md:px-10 mt-8 grid md:grid-cols-3 gap-8">
+            <div
+                class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 hover:border-primary/20 transition-all">
+                <span class="material-symbols-outlined text-4xl text-primary mb-4">trending_up</span>
+                <h4 class="text-xl font-bold mb-3">Todos los Niveles</h4>
+                <p class="text-custom-text/70 leading-relaxed">Desde principiantes a avanzados, adaptamos la práctica a
+                    cada cuerpo.</p>
+            </div>
+            <div
+                class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 hover:border-primary/20 transition-all">
+                <span class="material-symbols-outlined text-4xl text-primary mb-4">bolt</span>
+                <h4 class="text-xl font-bold mb-3">Intensidad Media-Alta</h4>
+                <p class="text-custom-text/70 leading-relaxed">Un desafío físico y mental que busca la purificación a
+                    través del calor interno.</p>
+            </div>
+            <div
+                class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 hover:border-primary/20 transition-all">
+                <span class="material-symbols-outlined text-4xl text-primary mb-4">schedule</span>
+                <h4 class="text-xl font-bold mb-3">75 Minutos</h4>
+                <p class="text-custom-text/70 leading-relaxed">Práctica completa de asana seguida de meditación y
+                    relajación profunda.</p>
+            </div>
+        </div>
+        <!-- Profile Section -->
+        <div class="mt-16 grid md:grid-cols-12 gap-12 items-center md:mt-32">
+            <div class="md:col-span-5 relative">
+                <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl rotate-3 bg-primary/10 p-2">
+                    <img alt="Andrea Gattuso practicing a mindful Vinyasa flow"
+                        class="w-full h-full object-cover rounded-xl -rotate-3"
+                        data-alt="Professional portrait of a mature woman performing Vinyasa yoga asanas in a serene setting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkwbF4RvUb47qjf5ww9liSqVC6UjU3F8JatrjaTIPDpLqyWkFld6HH7EaX1hOcedZkXP9nmITMFhmX0zVqqmN0ZrsakfHMtzCnX3y6JyPdGU9ZbspI5cZc6zIzSIEJ7V_xk7iuWvKiqb0dtmDaleOk7m1wkMXPUOSZgeTUnj5ElVLysqgzTDjaHc2QrntoU33dt8g4C6YaLRtk3aRCn4DRCjLTiXyfBNLDtoSFQlsEgGOh_zzivSlO5HEJhDlTlghO0uOHRmDo4Er5" />
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block">
+                    <p class="text-primary font-bold text-2xl">10+ Años</p>
+                    <p class="text-custom-text/60 text-sm">De experiencia</p>
+                </div>
+            </div>
+            <div class="md:col-span-7 space-y-6">
+                <div>
+                    <h3 class="text-primary font-bold text-lg mb-2">Conoce a tu Maestra</h3>
+                    <h2 class="text-4xl font-black text-custom-text leading-tight">Andrea Gattuso</h2>
+                    <p class="text-primary/80 font-medium text-xl mt-2">Especialista en Vinyasa • Movimiento y Fluidez
+                    </p>
+                </div>
+                <p class="text-custom-text/80 text-lg leading-relaxed italic">
+                    "El Vinyasa es una danza entre la respiración y el cuerpo, donde cada movimiento nace de la
+                    intención consciente."
+                </p>
+                <p class="text-custom-text/80 text-lg leading-relaxed">
+                    Andrea ha dedicado más de una década a perfeccionar el flujo creativo de Vinyasa. Su enfoque combina
+                    la alineación precisa con una libertad de movimiento que permite a cada alumno encontrar su propio
+                    ritmo.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">verified</span>
+                        <span class="font-bold">RYT-500 Yoga Alliance</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">auto_fix_high</span>
+                        <span class="font-bold">Secuenciación Creativa</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">air</span>
+                        <span class="font-bold">Pranayama Avanzado</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">self_improvement</span>
+                        <span class="font-bold">Meditación en Movimiento</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CTA Banner -->
+        <section class="px-6 pb-24 mt-24">
+            <div class="max-w-7xl mx-auto rounded-[2.5rem] p-12 md:p-20 text-center relative overflow-hidden"
+                style="background-color: #3e2f26;">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full -mr-32 -mt-32"></div>
+                <div class="absolute bottom-0 left-0 w-48 h-48 bg-primary/10 rounded-full -ml-24 -mb-24"></div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 relative z-10">¿Listo para transformar tu
+                    práctica?</h2>
+                <p class="text-white/70 text-lg mb-12 max-w-2xl mx-auto relative z-10">
+                    Únete a nuestras sesiones semanales y descubre el poder del movimiento consciente.
+                </p>
+                <button
+                    class="bg-primary text-background-light px-10 py-5 font-black text-lg hover:scale-105 transition-transform relative z-10 rounded-full">Reservar
+                    clase de Vinyasa</button>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Homogenized -->
+    <footer class="bg-custom-text text-white/90 py-16 px-6 md:px-20 mt-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="size-8 overflow-hidden rounded-full">
+                        <img alt="Logo Footer" class="w-full h-full object-cover"
+                            data-alt="Small version of the brand logo"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR458lR-C_zWwMnPUg15i7coXpaeXYVT8WOCYJ78qfm7N5JpoPBOHy8EwYeCgOdytu-OljfelR0ZSaNzouqrakD7nX4C6NRpdg3DFhBjH9X680xm2rNdiByvUKGyLZ0tDZRH3mjNklFXYYlXbEC3lkI8XRuDEfKb_b0ihByPXhJksVsjR39gchPy_m7IZHVO3HHhjS3_iONppW9V--9X4Yd6NxS8YNossrR0nZrZamuMGTpZB3j_URf1VNW9ZMGqgp8cC3e0rQ6Wzv" />
+                    </div>
+                    <h2 class="text-xl font-bold text-white">Inmersión Ashtanga</h2>
+                </div>
+                <p class="text-white/60 text-sm leading-relaxed mb-6">
+                    Inspirando movimiento y consciencia a través del yoga vinyasa contemporáneo y tradicional.
+                </p>
+                <div class="flex gap-4">
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">alternate_email</span></a>
+                    <a class="hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">share</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Explorar</h4>
+                <ul class="space-y-4 text-sm text-white/60">
+                    <li><a class="hover:text-primary transition-colors" href="#">Clases Online</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Retiros</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Talleres</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Soporte</h4>
+                <ul class="space-y-4 text-sm text-white/60">
+                    <li><a class="hover:text-primary transition-colors" href="#">Contacto</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Preguntas Frecuentes</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Privacidad</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Términos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-widest text-xs">Newsletter</h4>
+                <p class="text-sm text-white/60 mb-4">Suscríbete para recibir novedades sobre formaciones y retiros.</p>
+                <form class="flex flex-col gap-3">
+                    <input
+                        class="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-primary"
+                        placeholder="Tu email" type="email" />
+                    <button
+                        class="bg-primary text-white font-bold py-2 rounded-lg text-sm hover:bg-primary/90 transition-all">Unirme</button>
+                </form>
+            </div>
+        </div>
+        <div
+            class="max-w-6xl mx-auto pt-12 mt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-xs text-white/40">© 2024 Inmersión Ashtanga. Todos los derechos reservados.</p>
+            <div class="flex gap-8 text-xs text-white/40">
+                <p>Barcelona, España</p>
+                <p>hola@fluidezvinyasa.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="player.js"></script>
+</body>
+
+</html>
